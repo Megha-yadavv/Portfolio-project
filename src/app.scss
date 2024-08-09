@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "DM sans", sans-serif;
+}
+body{
+    background-color: #0c0c1d;
+    color:lightgrey
+}
+section:not(.sec){
+    height: 100vh;
+    scroll-snap-align: center;
+  }
+.sec{
+    height: 100vh;
+    scroll-snap-align: center;
+    overflow: auto;
+    @mixin mobile{
+        @media (max-width:738px){
+           height: auto;
+           scroll-snap-align:end;
+           overflow: auto;
+          
+        }
+    }
+
+}
+
+html{
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+@mixin mobile{
+    @media (max-width:738px){
+        @content;
+    }
+}
+

@@ -1,0 +1,167 @@
+@import "../../app.scss";
+
+.portfolio {
+  margin: auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  background: linear-gradient(180deg, #0c0c1d, #191947);
+  align-items: center;
+  justify-content: center;
+ 
+ 
+
+  .container {
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+    @include mobile {
+      gap: 10px; 
+      padding: 10px;
+    }
+  
+   
+
+    h1 {
+      color: orange;
+      letter-spacing: 10px;
+      font-size: 4rem;
+      font-weight: 300;
+      @include mobile {
+        font-size: 2rem;
+        margin-top: 20x;
+      }
+    }
+    .work-container {
+      width: 100%;
+      height: auto;
+      padding: 10px;
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      flex-wrap: wrap; 
+      @include mobile{
+        gap: 20px;
+        
+      }
+     
+
+      .work {
+       
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        transition: height 0.5s;
+        position: relative;
+        transition: 0.5s;
+        @include mobile {
+          width: 100%; 
+          height: 300px; 
+        }
+        
+      }
+      .project1 {
+        background: url("https://i.pinimg.com/736x/a9/e1/2d/a9e12dfa038e12b2e46675b9e7923007.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-x: center;
+        background-position-y: center;
+      }
+      .project2 {
+        background: url("https://www.saturdaygift.com/wp-content/uploads/Pretty-printable-not-to-do-lists-by-SaturdayGift.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-x: center;
+        background-position-y: center;
+      }
+      .project3 {
+        background: url("https://w0.peakpx.com/wallpaper/981/563/HD-wallpaper-tick-tac-toe-game-settle.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-x: center;
+        background-position-y: center;
+      }
+      .layer {
+        background: linear-gradient(180deg, #28285a, rebeccapurple);
+        height: 0;
+        opacity: 0.9;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        border-radius: 10px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        visibility: hidden;
+        transition: height 0.5s 0.4s ease-out, visibility 0.4s 0.4s ease-in;
+        overflow: hidden;
+        text-align: center;
+        @include mobile {
+          padding: 10px;
+          gap: 5px;
+         
+        }
+        h3 {
+          font-size: 2rem;
+          text-align: center;
+          color: #ffdb58;
+          @include mobile {
+            font-size: 1rem;
+          }
+         
+        }
+        p {
+          font-size: 15px;
+          display: flex;
+          flex-direction: column;
+          text-align: justify;
+          @include mobile {
+            font-size: 14px;;
+           
+          }
+          span {
+            font-weight: 300;
+            font-size: 18px;
+            color: #ffdb58;
+            @include mobile {
+              font-size: 14px;;
+             
+            }
+          }
+        }
+
+        a {
+          margin-top: 20px;
+          color: rebeccapurple;
+          text-decoration: none;
+          font-size: 14px;
+          padding: 10px;
+          background: #ffffff;
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          text-align: center;
+          will-change: transform;
+        }
+      }
+      .work:hover {
+        .layer {
+          height: 100%;
+          visibility: visible;
+        }
+        @include mobile {
+          height: 300px;
+         
+        }
+      }
+    }
+  }
+}
