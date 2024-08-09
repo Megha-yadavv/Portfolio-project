@@ -15,14 +15,14 @@ section:not(.sec){
 .sec{
     height: 100vh;
     scroll-snap-align: center;
-    overflow: auto;
-    @mixin mobile{
+    
+   
         @media (max-width:738px){
            height: auto;
-           scroll-snap-align:end;
-           overflow: auto;
+           scroll-snap-align:start;
+           
           
-        }
+        
     }
 
 }
