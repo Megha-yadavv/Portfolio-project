@@ -1,16 +1,15 @@
 import React from "react";
-import { motion} from "framer-motion";
+import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import "./portfolio.scss";
 
 export default function Portfolio() {
-
   return (
     <motion.div className="portfolio">
       <motion.div className="container">
-        <motion.h1 >Projects</motion.h1>
-        <motion.div className="work-container" >
+        <motion.h1>Projects</motion.h1>
+        <motion.div className="work-container">
           <motion.div className="work project1">
             <motion.div className="layer">
               <h3>Restraurant Menu</h3>
@@ -36,11 +35,9 @@ export default function Portfolio() {
               <h3>To-Do-List</h3>
               <p>
                 <span>Tools used: ReactJS </span>
-                <br />
-                menu landing page was designed using HTML and CSS, ensuring a
-                seamless blend of structure and style. Every detail, from layout
-                to color scheme, was carefully crafted to create a visually
-                appealing, responsive and user-friendly experience.
+                <br />A responsive to-do list application built with React.js,
+                featuring dynamic task management, real-time updates, and
+                seamless adaptability across all devices.
               </p>
               <motion.a
                 href="https://megha-yadavv.github.io/react-project/"
@@ -56,11 +53,10 @@ export default function Portfolio() {
               <h3>Tic-Tac-Toe</h3>
               <p>
                 <span>Tools used: ReactJS </span>
-                <br />
-                menu landing page was designed using HTML and CSS, ensuring a
-                seamless blend of structure and style. Every detail, from layout
-                to color scheme, was carefully crafted to create a visually
-                appealing, responsive and user-friendly experience.
+                <br />A lively Tic-Tac-Toe game built with React.js, featuring
+                real-time gameplay, and a responsive design that
+                adapts to any device. Enjoy classic matches with a quirky,
+                colorful interface that's perfect for any occasion!
               </p>
               <motion.a
                 href="https://megha-yadavv.github.io/tic-tac-toe/"
