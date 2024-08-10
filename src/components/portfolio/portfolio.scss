@@ -8,10 +8,9 @@
   background: linear-gradient(180deg, #0c0c1d, #191947);
   align-items: center;
   justify-content: center;
- @include mobile{
-  height: auto;
- }
- 
+  @include mobile {
+    height: auto;
+  }
 
   .container {
     overflow: hidden;
@@ -23,12 +22,10 @@
     align-items: center;
     gap: 90px;
     @include mobile {
-      gap: 10px; 
+      gap: 10px;
       padding: 10px;
       height: auto;
     }
-  
-   
 
     h1 {
       color: orange;
@@ -47,47 +44,67 @@
       display: flex;
       flex-direction: row;
       gap: 20px;
-     
-      @include mobile{
+
+      @include mobile {
         gap: 20px;
         height: auto;
-        flex-wrap: wrap; 
-        
+        flex-wrap: wrap;
       }
-     
 
       .work {
-       
         width: 100%;
         height: 100%;
         border-radius: 10px;
         transition: height 0.5s;
         position: relative;
         transition: 0.5s;
-        @include mobile {
-          width: 100%; 
-          height: 300px; 
+        .see-more {
+          width: inherit;
+          height: inherit;
+          display: flex;
+          align-items: start;
+          justify-content: center;
+          opacity: 0.9;
+          text-align: center;
+          padding: 20px;
+
+            h2 {
+              font-weight: 700;
+              text-align: center;
+              font-size: 19px;
+            }
+          }
+          @include mobile {
+            width: 100%;
+            height: 300px;
+          }
         }
-        
+       
       }
       .project1 {
-        background: url("https://i.pinimg.com/736x/a9/e1/2d/a9e12dfa038e12b2e46675b9e7923007.jpg");
+        background: url("https://i.pinimg.com/736x/a9/e1/2d/a9e12dfa038e12b2e46675b9e7923007.jpg"),
+          linear-gradient(#ffffff, #b3c271);
         background-repeat: no-repeat;
         background-size: cover;
+        background-blend-mode: multiply;
         background-position-x: center;
         background-position-y: center;
       }
       .project2 {
-        background: url("https://www.saturdaygift.com/wp-content/uploads/Pretty-printable-not-to-do-lists-by-SaturdayGift.jpg");
+        background: url("https://www.saturdaygift.com/wp-content/uploads/Pretty-printable-not-to-do-lists-by-SaturdayGift.jpg"),
+          linear-gradient(#ffffff, #71c2bb);
         background-repeat: no-repeat;
         background-size: cover;
+        background-blend-mode: multiply;
         background-position-x: center;
         background-position-y: center;
       }
       .project3 {
-        background: url("https://w0.peakpx.com/wallpaper/981/563/HD-wallpaper-tick-tac-toe-game-settle.jpg");
+        background: url("https://w0.peakpx.com/wallpaper/981/563/HD-wallpaper-tick-tac-toe-game-settle.jpg"),
+          linear-gradient(#ffffff, #8d7676);
         background-repeat: no-repeat;
         background-size: cover;
+        background-blend-mode: multiply;
         background-position-x: center;
         background-position-y: center;
       }
@@ -112,7 +129,6 @@
         @include mobile {
           padding: 10px;
           gap: 5px;
-         
         }
         h3 {
           font-size: 2rem;
@@ -121,7 +137,6 @@
           @include mobile {
             font-size: 1rem;
           }
-         
         }
         p {
           font-size: 15px;
@@ -129,16 +144,14 @@
           flex-direction: column;
           text-align: justify;
           @include mobile {
-            font-size: 14px;;
-           
+            font-size: 14px;
           }
           span {
             font-weight: 300;
             font-size: 18px;
             color: #ffdb58;
             @include mobile {
-              font-size: 14px;;
-             
+              font-size: 14px;
             }
           }
         }
@@ -164,9 +177,8 @@
         }
         @include mobile {
           height: 300px;
-         
         }
       }
     }
   }
-}
+

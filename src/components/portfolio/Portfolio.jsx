@@ -11,6 +11,12 @@ export default function Portfolio() {
         <motion.h1>Projects</motion.h1>
         <motion.div className="work-container">
           <motion.div className="work project1">
+            
+              <motion.div className="see-more" style={{color:"black"}}>
+                <motion.h2>See More</motion.h2>
+              </motion.div>
+           
+
             <motion.div className="layer">
               <h3>Restraurant Menu</h3>
               <p>
@@ -31,6 +37,11 @@ export default function Portfolio() {
             </motion.div>
           </motion.div>
           <motion.div className="work project2">
+          
+              <motion.div className="see-more" style={{color: "black"}}>
+                <motion.h2>See More</motion.h2>
+              </motion.div>
+           
             <motion.div className="layer">
               <h3>To-Do-List</h3>
               <p>
@@ -49,14 +60,19 @@ export default function Portfolio() {
             </motion.div>
           </motion.div>
           <motion.div className="work project3">
+         
+              <motion.div className="see-more" style={{}}>
+                <motion.h2>See More</motion.h2>
+              </motion.div>
+           
             <motion.div className="layer">
               <h3>Tic-Tac-Toe</h3>
               <p>
                 <span>Tools used: ReactJS </span>
                 <br />A lively Tic-Tac-Toe game built with React.js, featuring
-                real-time gameplay, and a responsive design that
-                adapts to any device. Enjoy classic matches with a quirky,
-                colorful interface that's perfect for any occasion!
+                real-time gameplay, and a responsive design that adapts to any
+                device. Enjoy classic matches with a quirky, colorful interface
+                that's perfect for any occasion!
               </p>
               <motion.a
                 href="https://megha-yadavv.github.io/tic-tac-toe/"

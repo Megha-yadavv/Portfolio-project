@@ -65,7 +65,7 @@ export default function Contact() {
           className="phone-logo"
           initial={{ opacity: 1 }}
           whileInView={{ opacity: 0 }}
-          transition={{ delay: 3, duration: 1 }}
+          transition={{ delay: 2, duration: 1 }}
         >
           <svg width="350px" height="350px" viewBox="0 0 524 524">
             <motion.path
@@ -105,7 +105,7 @@ export default function Contact() {
           onSubmit={sendEmail}
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ delay: 4, duration: 1 }}
+          transition={{ delay: 3, duration: 1 }}
         >
           <input type="text" required placeholder="name" name="name"/>
           <input type="email" required placeholder="e-mail" name="email"/>
