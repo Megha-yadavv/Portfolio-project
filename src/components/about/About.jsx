@@ -28,13 +28,13 @@ export default function About() {
     ];
   
     const image = [
-      { logo: "/image/c-logo.png", type: "C" },
-      { logo: "/image/python-logo.png", type: "Python" },
-      { logo: "/image/html-logo.png", type: "HTML" },
-      { logo: "/image/css-logo.png", type: "CSS" },
-      { logo: "/image/js.png", type: "JavaScript" },
-      { logo: "/image/react-logo.png", type: "ReactJS" },
-      { logo: "/image/mysql-logo.png", type: "MySql" },
+      { logo: "./image/c-logo.png", type: "C" },
+      { logo: "./image/python-logo.png", type: "Python" },
+      { logo: "./image/html-logo.png", type: "HTML" },
+      { logo: "./image/css-logo.png", type: "CSS" },
+      { logo: "./image/js.png", type: "JavaScript" },
+      { logo: "./image/react-logo.png", type: "ReactJS" },
+      { logo: "./image/mysql-logo.png", type: "MySql" },
     ];
   
     const buttonVariants = {

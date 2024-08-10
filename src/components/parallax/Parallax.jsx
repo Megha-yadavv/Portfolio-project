@@ -24,9 +24,9 @@ export default function Parallax(props) {
       }}
     >
       <motion.h1 style={{y: yBg}}>{props.type === "about" ? "About" : "Portfolio"}</motion.h1>
-      <motion.div  className="mountains-front"><img src="/image/mountains_front.png" alt="" /></motion.div>
-      <motion.div style={{y: textyBg}} className="mountains-behind"><img src="/image/mountains_behind.png" alt="" /></motion.div>
-      <motion.div  style={{x: yBg}} className="stars"><img src="/image/stars.png" alt="" /></motion.div>
+      <motion.div  className="mountains-front"><img src="./image/mountains_front.png" alt="" /></motion.div>
+      <motion.div style={{y: textyBg}} className="mountains-behind"><img src="./image/mountains_behind.png" alt="" /></motion.div>
+      <motion.div  style={{x: yBg}} className="stars"><img src="./image/stars.png" alt="" /></motion.div>
     </div>
   );
 }

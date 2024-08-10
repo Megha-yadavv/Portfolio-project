@@ -64,6 +64,10 @@
     align-items: center;
     background: linear-gradient(180deg, #0c0c1d, #001b3a);
     border-radius: 20px;
+    @include mobile{
+      width: 90%;
+      height: 90%;
+    }
 
     .education {
       font-size: 18px;
@@ -92,7 +96,7 @@
         flex-direction: column;
         gap: 10px;
         @include mobile {
-          gap: 10px;
+          gap: 20px;
         }
         p {
           font-size: 18px;
@@ -104,8 +108,8 @@
           width: 60px;
           height: 60px;
           @include mobile {
-            width: 40px;
-            height: 40px;
+            width: 50px;
+            height: 50px;
           }
         }
       }
