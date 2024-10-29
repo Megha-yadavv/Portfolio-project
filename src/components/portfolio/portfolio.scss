@@ -20,7 +20,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 90px;
+    gap: 60px;
     @include mobile {
       gap: 10px;
       padding: 10px;
@@ -42,41 +42,31 @@
       height: 100%;
       padding: 10px;
       display: flex;
+      overflow-x: scroll;
       flex-direction: row;
       gap: 20px;
+      &::-webkit-scrollbar {
+        display: none;
+    }
 
       @include mobile {
         gap: 20px;
         height: auto;
         flex-wrap: wrap;
       }
+      
 
       .work {
         width: 100%;
         height: 100%;
-        border-radius: 10px;
+        border-radius: 40px;
         transition: height 0.5s;
         position: relative;
         transition: 0.5s;
-        .see-more {
-          width: inherit;
-          height: inherit;
-          display: flex;
-          align-items: start;
-          justify-content: center;
-          opacity: 0.9;
-          text-align: center;
-          padding: 20px;
-
-            h2 {
-              font-weight: 700;
-              text-align: center;
-              font-size: 19px;
-            }
-          }
+        
           @include mobile {
-            width: 100%;
-            height: 300px;
+            width: 320px;
+            height: 320px;
           }
         }
        
@@ -109,23 +99,23 @@
         background-position-y: center;
       }
       .layer {
-        background: linear-gradient(180deg, #28285a, rebeccapurple);
+        background: linear-gradient(#19193b,#28285a7a);
         height: 0;
-        opacity: 0.9;
         padding: 20px;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        align-items: start;
+        justify-content: start;
         gap: 10px;
-        border-radius: 10px;
+        border-radius: 37px;
         position: absolute;
         bottom: 0;
         left: 0;
         visibility: hidden;
         transition: height 0.5s 0.2s ease-out, visibility 0.4s 0.2s ease-in;
         overflow: hidden;
-        text-align: center;
+        text-align: justify;
+        
         @include mobile {
           padding: 10px;
           gap: 5px;
@@ -133,7 +123,7 @@
         h3 {
           font-size: 2rem;
           text-align: center;
-          color: #ffdb58;
+          color: orange;
           @include mobile {
             font-size: 1rem;
           }
@@ -149,7 +139,7 @@
           span {
             font-weight: 300;
             font-size: 18px;
-            color: #ffdb58;
+            color: orange;
             @include mobile {
               font-size: 14px;
             }
@@ -157,7 +147,7 @@
         }
 
         a {
-          margin-top: 20px;
+          margin:auto;
           color: rebeccapurple;
           text-decoration: none;
           font-size: 14px;
@@ -168,6 +158,7 @@
           border-radius: 50%;
           text-align: center;
           will-change: transform;
+         
         }
       }
       .work:hover {
@@ -176,7 +167,7 @@
           visibility: visible;
         }
         @include mobile {
-          height: 300px;
+          height: 320px;
         }
       }
     }
