@@ -26,7 +26,7 @@ export default function Home() {
             <motion.h2 variants={textVarients} >Megha Yadav</motion.h2 >
             <motion.h1 variants={textVarients}>Frontend developer</motion.h1>
             <motion.div className="buttons" variants={textVarients} >
-            <motion.a  href='https://drive.google.com/file/d/191Cy7rjPYkZN76gSX9SycgPPh6E1nz3Y/view?usp=drive_link' target="_blank" variants={textVarients}>View resume</motion.a>
+            <motion.a  href='https://drive.google.com/file/d/1YNeOxIy46x34fbTk3QHTw8DgvVDZBfz8/view?usp=sharing' target="_blank" variants={textVarients}>View resume</motion.a>
             <motion.a  href="#Contact" variants={textVarients} style={{background: "white", color: "black"}}>Contact Me</motion.a>
             </motion.div>
         </motion.div>
